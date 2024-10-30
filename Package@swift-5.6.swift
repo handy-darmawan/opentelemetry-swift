@@ -17,10 +17,8 @@ let package = Package(
         .library(name: "OpenTelemetryProtocolExporterHTTP", type: .static, targets: ["OpenTelemetryProtocolExporterHttp"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.20.2"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.4.4"),
-        .package(url: "https://github.com/apple/swift-metrics.git", from: "2.1.1"),
     ],
     targets: [
         .target(name: "OpenTelemetryApi",
